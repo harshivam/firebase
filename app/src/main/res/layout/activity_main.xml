@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/fontbold"
+        android:gravity="center"
+
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fontsemibold"
+
+        android:text="Sign Up to continue"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="400dp"
+        android:layout_gravity="center"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/tvInput1"
+            android:layout_height="wrap_content"
+            android:textColorHint="#181818"
+            android:background="@drawable/input"
+            android:hint="Enter your name" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_marginTop="20dp"
+        android:layout_width="400dp"
+        android:layout_gravity="center"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/tvInput2"
+            android:layout_height="wrap_content"
+            android:textColorHint="#181818"
+            android:background="@drawable/input"
+            android:hint="Enter your email address" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="400dp"
+
+        android:layout_gravity="center"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_marginTop="30dp"
+        app:endIconMode="password_toggle"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#181818"
+            android:id="@+id/tvInput3"
+            android:background="@drawable/input"
+            android:hint="Enter your password" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="400dp"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#181818"
+            android:background="@drawable/input"
+            android:id="@+id/tvInput4"
+            android:hint="Enter your unique id" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignup"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Sign Up"
+        android:textAllCaps="false" />
+    <TextView
+        android:id="@+id/tvSignIn"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#3AFFFFFF"
+
+
+
+        android:text="If already registered,click SIGN IN"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+
+        />
+
+
+
+
+</LinearLayout>
